@@ -5,7 +5,7 @@ import { FontAwesome } from '@expo/vector-icons'
 const SearchBar = () => {
   return (
     <View style={styles.backgroundStyle}>
-      <FontAwesome name='search' size={30}/>
+      <FontAwesome style={styles.iconStyle} name='search'/>
       <TextInput style={styles.inputStyle} placeholder='Search'/>
     </View>
   )
@@ -20,10 +20,16 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 15,
     flexDirection: 'row',
+    marginTop: 15,
   },
   inputStyle: {
-    borderColor: 'black',
-    borderWidth: 1,
     flex: 1,
+    fontSize: 18,
   },
+  iconStyle: {
+    fontSize: 35,
+    alignSelf: 'center',
+    marginHorizontal: 15,
+  },
+
 })
